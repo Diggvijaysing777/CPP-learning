@@ -17,5 +17,12 @@ using namespace std;
 int main(){
     const int num = 45;
     cout<<"number is = "<< num;
+
     return 0 ;
+}
+//TYPE CONVERSION
+#include<iostream>
+using namespace std;
+int main(){
+    float f = 3.6e4 ;
 }
