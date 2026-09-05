@@ -14,14 +14,41 @@
 //     return 0;
 // }
 //SUBSTRACTION
-#include <iostream>
+// #include <iostream>
+// int main(){
+//     int a , b ;
+//     std::cout << "enter a";
+//     std::cin >> a;
+//     std::cout << "enter b "; 
+//     std::cin >> b;
+//     int subs = a-b;
+//     std::cout << subs ;
+//     return 0;
+// }
+// MULTIPLICATION
+// #include <iostream>
+// using namespace std ;
+// int main(){
+//     int a,b ;
+//     std::cout<<"enter a";
+//     std::cin>>a;
+//     std::cout<<"enter b";
+//     std::cin>>b;
+//     int mult = a*b;
+//     std::cout<<mult;
+//     return 0;
+
+// }
+//DIVISION
+#include<iostream>
+using namespace std;
 int main(){
-    int a , b ;
-    std::cout << "enter a";
-    std::cin >> a;
-    std::cout << "enter b ";
-    std::cin >> b;
-    int subs = a-b;
-    std::cout << subs ;
+   double a,b ;
+    std::cout<<"enter a ";
+    std::cin>>a;
+    std::cout<<"enter b";
+    std::cin>>b;
+ double div = a/b;
+    std::cout<<div;
     return 0;
 }
