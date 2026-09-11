@@ -102,15 +102,55 @@
 //     return 0 ;
 // }
 //Write a function cube() that takes an integer and returns its cube.
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int cube(int a ){
+//     return a*a*a ;
+// }
+// int main(){
+//     int num1 ;
+//     cout << "Enter the no " ;
+//     cin >> num1 ;
+//     cout << "Cube of this no = "<<cube(num1);
+//     return 0 ;
+// }
+//print wheather no is positive or not 
+// #include<iostream>
+// using namespace std;
+// int ispositive(int a ){
+//     return a > 0;
+// }
+// int main (){
+//     int num1 ;
+//     cout << "enter no ";
+//     cin >> num1;
+//     if(ispositive(num1)==1){
+//         cout<<"Number is positive ";
+//     }else if (num1 < 0){
+//         cout << "Number is negative";
+//     }else{
+//         cout<<"Number is zero ";
+//     }
+//     return 0 ;
+// }
+//write function int factorial()print factorials of input number 
+#include <iostream>
 using namespace std;
-int cube(int a ){
-    return a*a*a ;
+int factorial(int n ){
+    int result = 1;
+    for(int i= 1; i<=5; i++ )
+    {
+        result = result*i;
+    }
+    return result ;
+    
+
 }
 int main(){
     int num1 ;
-    cout << "Enter the no " ;
-    cin >> num1 ;
-    cout << "Cube of this no = "<<cube(num1);
+    cout << "enter no";
+    cin >> num1;
+    cout << factorial(num1);
     return 0 ;
+
 }
