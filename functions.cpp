@@ -134,23 +134,78 @@
 //     return 0 ;
 // }
 //write function int factorial()print factorials of input number 
-#include <iostream>
-using namespace std;
-int factorial(int n ){
-    int result = 1;
-    for(int i= 1; i<=5; i++ )
-    {
-        result = result*i;
-    }
-    return result ;
+// #include <iostream>
+// using namespace std;
+// int factorial(int n ){
+//     int result = 1;
+//     for(int i= 1; i<=5; i++ )
+//     {
+//         result = result*i;
+//     }
+//     return result ;
     
 
-}
-int main(){
-    int num1 ;
-    cout << "enter no";
-    cin >> num1;
-    cout << factorial(num1);
-    return 0 ;
+// }
+// int main(){
+//     int num1 ;
+//     cout << "enter no";
+//     cin >> num1;
+//     cout << factorial(num1);
+//     return 0 ;
 
+// }
+//WAP print Area of rectangle using fuction 
+// #include <iostream>
+// using namespace std;
+// int area_of_rectangle (int length , int breadth){
+//     return length*breadth;
+// }
+// int main(){
+//     int x,y;
+//     cout << "enter length of rectangle";
+//     cin >> x;
+//     cout << "enter breadth of rectangle";
+//     cin >> y;
+//     cout<< "Area of rectangle = "<< area_of_rectangle(x,y);
+//     return 0;
+// }
+//wap to print prime number using functions
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n)
+{
+    if(n < 2)
+    {
+        return false;
+    }
+
+    for(int i = 2; i < n; i++)
+    {
+        if(n % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main()
+{
+    int num;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    if(isPrime(num))
+    {
+        cout << "Number is Prime";
+    }
+    else
+    {
+        cout << "Number is Not Prime";
+    }
+
+    return 0;
 }
