@@ -257,3 +257,90 @@ int main()
 
     return 0;
 }
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n)
+{
+    if(n < 2)
+    {
+        return false;
+    }
+
+    for(int i = 2; i < n; i++)
+    {
+        if(n % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main()
+{
+    int num;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    if(isPrime(num))
+    {
+        cout << "Number is Prime";
+    }
+    else
+    {
+        cout << "Number is Not Prime";
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+void swap(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+
+    cout << "Inside function: a = " << a << ", b = " << b << endl;
+}
+
+int main()
+{
+    int x = 10, y = 20;
+
+    cout << "Before function: x = " << x << ", y = " << y << endl;
+
+    swap(x, y);
+
+    cout << "After function: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+void swap(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+
+    cout << "Inside function: a = " << a << ", b = " << b << endl;
+}
+
+int main()
+{
+    int x = 10, y = 20;
+
+    cout << "Before function: x = " << x << ", y = " << y << endl;
+
+    swap(x, y);
+
+    cout << "After function: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
