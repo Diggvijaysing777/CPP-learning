@@ -1,29 +1,24 @@
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int a;
-//     cout<< "enter no ";
-//     cin >> a;
-//     if(a>0){
-//         cout<<"number is positive";
-//     }else if(a==0){
-//         cout<<"number is zero";
-//     }else{
-//         cout<<"number is negative";
-//     }
-//     return 0;
-// }
-//input year check wheather year is leap year or not
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+
+int main() {
     int a;
-    cout << "enter the year";
+    cout << "enter the year: ";
     cin >> a;
-    if (a % 4 == 0 ){
-        cout << "year is leap year";
-    }else{
-        cout<< "Not leap year";
+
+    if (a % 100 == 0) {
+        if (a % 400 == 0) {
+            cout << "Year is leap year";
+        } else {
+            cout << "Year is not leap year";
+        }
+    } else {
+        if (a % 4 == 0) {
+            cout << "Year is leap year";
+        } else {
+            cout << "Year is not leap year";
+        }
     }
+
     return 0;
 }
