@@ -211,14 +211,48 @@
 // }
 
 //FROM NYC
+// #include<iostream>
+// using namespace std;
+// //function declaration
+// void printhello(){
+//     cout<<"hello ";
+// } 
+// int main (){
+//     //fucntion call
+//     printhello();
+//     return 0 ;
+// }
+//print sum of twi numbers using add function
+// #include<iostream>
+// using namespace std;
+// int sum (int a , int b ){ //parameters
+//     return a+b;
+// }
+// int main (){
+//     int x,y;
+//     cout << "enter x :";
+//     cin >> x;
+//     cout << "enter Y :";
+//     cin >> y;
+//     cout << "sum of x and y : "<< sum (x , y);//Arguments
+
+//     return 0 ;
+// }
 #include<iostream>
 using namespace std;
-//function declaration
-void printhello(){
-    cout<<"hello ";
-} 
+int Maximum(int a , int b){
+   return a > b;
+}
 int main (){
-    //fucntion call
-    printhello();
-    return 0 ;
+    int x , y;
+    cout<<"Enter no a ";
+    cin >> x;
+   cout << "Enter no b : ";
+   cin >> y;
+   if (Maximum(x , y)== 1){
+    cout << "maimum no is "<< x;
+   }else{
+    cout<<"maximum no is "<< y;
+   }
+   return 0 ;  
 }
